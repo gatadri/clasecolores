@@ -1,0 +1,55 @@
+$transition-speed: 0.3s;
+
+.harmonies {
+  margin: 2rem 0;
+
+  input[type="range"] {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    .card {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+      font-weight: bold;
+      transition: all $transition-speed ease;
+
+      &:hover { transform: translateY(-5px); }
+    }
+  }
+}
+
+.contrast-tool {
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+
+  .preview-box {
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+.pyramid-section {
+  padding: 2rem;
+  text-align: center;
+
+  canvas {
+    display: block;
+    margin: 0 auto;
+  }
+}
