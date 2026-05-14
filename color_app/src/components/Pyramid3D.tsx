@@ -100,7 +100,7 @@ const Pyramid3D: React.FC<{ hue: number }> = ({ hue }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setRandomHue(Math.floor(Math.random() * 360));
-        }, 5000);
+        }, 3000);
         return () => clearInterval(interval);
     }, []);
 
